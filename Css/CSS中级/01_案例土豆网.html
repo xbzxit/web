@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_案例土豆网</title>
+    <style>
+        .box {
+            position: relative;
+            width: 222px;
+            height: 220px;
+            margin:  100px auto;
+        }
+
+        .mask {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 223px;
+            height: 220px;
+            /*背景色灰色 ， 图片 水平 垂直 居中*/
+            background: rgba(0, 0, 0, .3) url(images/arr.png) no-repeat center center;
+        }
+
+        .box a:hover .mask {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <a href="#">
+            <div class="mask"></div>
+            <img src="images/3.jpg" alt="">
+        </a>
+    </div>
+
+</body>
+</html>

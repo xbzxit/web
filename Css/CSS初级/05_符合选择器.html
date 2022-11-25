@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>符合选择器</title>
+    <style>
+        span.blue{
+
+        }
+
+        span, body, .blue {
+
+        }
+
+        body span {
+
+        }
+
+        .num > span {
+
+        }
+
+        :link {
+
+        }
+
+        :visited {
+
+        }
+
+        :hover {
+
+        }
+
+        :active {
+
+        }
+
+        a:link,a:visited{
+            color:red;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: cornflowerblue;
+            font-size: 14px;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="num">
+        <span class="blue"></span>
+    </div>
+<!--
+    做企业站关于连接文字的状态常用一下几种：
+    1.链接文字默认没有下划线，鼠标经过有下划线，访问后没有下划线
+    2.链接 文字都没有下划线，可能默认链接是一种颜色，鼠标经过变一种颜色
+    3.链接文字默认有下划线，鼠标经过有下划线并且可以变颜色（新闻站用）
+    注意:通常情况下，链接和访问后的状态是相同的
+-->
+    <a href="#">Google</a>
+    <p><a>百度一下</a></p>
+</body>
+</html>

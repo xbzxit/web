@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_元素的显示与隐藏</title>
+
+    <style>
+
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        .one {
+            /*元素隐藏了，但是位置还保留  不推荐使用*/
+            /*visibility: hidden;*/
+            visibility: visible;
+            background-color: blue;
+        }
+
+        .two {
+            background-color: darkmagenta;
+        }
+
+        .three {
+            /*元素隐藏之后，位置也会被空出来   重点推荐使用*/
+            display: none;
+            background-color: darkorange;
+        }
+        .four {
+            background-color : lightsalmon;
+        }
+
+        .six {
+            overflow: hidden;
+            /*长得丑， 不用*/
+            /*overflow: scroll;*/
+            /*内容超出显示滚动条， 不超出不显示*/
+            overflow: auto;
+            border: 1px solid red;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+
+    <div class="six">我能想到最浪漫的事就是慢慢陪你到老我能想到最浪漫的事就是慢慢陪你到老我能想到最浪漫的事就是慢慢陪你到老我能想到最浪漫的事就是慢慢陪你到老我能想到最浪漫的事就是慢慢陪你到老我能想到最浪漫的事就是慢慢陪你到老我能想到最浪漫的事就是慢慢陪你到老我能想到最浪漫的事就是慢慢陪你到老我能想到最浪漫的事就是慢慢陪你到老</div>
+
+</body>
+</html>
